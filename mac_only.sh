@@ -1,4 +1,6 @@
 # MacOS only aliases
+alias be="vi ~/.bash_profile"
+alias bs="source ~/.bash_profile"
 alias flushcache="dscacheutil -flushcache"
 alias grep="grep --color=always"
 alias lo="locate / | egrep -i" # MacOS update db: sudo /usr/libexec/locate.updatedb
