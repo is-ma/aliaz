@@ -1,7 +1,7 @@
 # any OS aliases
 alias c="clear"
 alias h="history | grep -E"
-alias ismapull='cd ~/.is-ma/ && for repo in */; do echo -e "\n--- $repo ---"; cd $repo; git pull; cd ..; done'
+alias ismapull='cd ~/.is-ma/ && for repo in */; do echo -e "\n--- $repo ---"; cd $repo; git for-each-ref --format="%(push:track)" refs/heads; git pull; cd ..; done'
 alias ll='ls -AlFh'
 wo () { whois $1 | egrep "^   (Admin|Creation|Updated)"; }
 
