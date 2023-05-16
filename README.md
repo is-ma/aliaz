@@ -6,7 +6,7 @@
 ## Installation for Linux distributions
 
 ```bash
-git clone https://github.com/is-ma/aliaz.git ~/.aliaz
+git clone https://github.com/is-ma/aliaz.git ~/.is-ma/aliaz
 echo "" >> ~/.bashrc
 echo "### IS-MA: ALIAZ (Bash) ### [type 'alib' to list them all]" >> ~/.bashrc
 echo "source ~/.is-ma/aliaz/welcome.sh" >> ~/.bashrc
