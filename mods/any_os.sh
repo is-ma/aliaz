@@ -2,7 +2,8 @@
 alias c="clear"
 alias h="history | grep -E"
 alias ismapull='back=$(pwd); cd ~/.is-ma/ && for repo in */; do echo -e "\n--- $repo ---"; cd $repo; git for-each-ref --format="%(push:track)" refs/heads; git pull; cd ..; done; cd $back'
-alias ll='ls -AlFh'
+alias ll="ls -AlFh"
+alias ls="ls -F"
 wo () { whois $1 | egrep "^   (Admin|Creation|Updated)"; }
 
 # any OS configs
