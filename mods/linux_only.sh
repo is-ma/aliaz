@@ -1,4 +1,5 @@
 # Bash only aliases
+alias alib='cat ~/.is-ma/aliaz/mods/linux_only.sh && cat ~/.is-ma/aliaz/mods/any_os.sh'
 alias be="vi ~/.bashrc"
 alias bs="source ~/.bashrc"
 alias ce='crontab -l > $HOME/my_crontab.conf && vi $HOME/my_crontab.conf && echo "Install changes with: ci."'

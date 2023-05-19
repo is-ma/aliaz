@@ -1,4 +1,5 @@
 # MacOS only aliases
+alias alim='cat ~/.is-ma/aliaz/mods/mac_only.sh && cat ~/.is-ma/aliaz/mods/any_os.sh'
 alias be="vi ~/.bash_profile"
 alias bs="source ~/.bash_profile"
 alias flushcache="dscacheutil -flushcache"
