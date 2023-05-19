@@ -5,3 +5,6 @@ source ~/.is-ma/aliaz/mods/welcome.sh
 source ~/.is-ma/aliaz/mods/linux_only.sh
 source ~/.is-ma/aliaz/mods/any_os.sh
 EOF
+
+# silent source
+source ~/.bashrc > /dev/null 2>&1
