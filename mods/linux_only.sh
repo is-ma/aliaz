@@ -1,9 +1,9 @@
 # Bash only aliases
 alias be="vi ~/.bashrc"
 alias bs="source ~/.bashrc"
-alias ce="vi /home/deploy/my_crontab.conf && echo 'Install changes with: ci.'"
-alias ci="crontab /home/deploy/my_crontab.conf && crontab -l"
-alias cl="crontab -l"
+alias ce='crontab -l > $HOME/my_crontab.conf && vi $HOME/my_crontab.conf && echo "Install changes with: ci."'
+alias ci='crontab $HOME/my_crontab.conf && crontab -l'
+alias cl="crontab -l > $HOME/my_crontab.conf && cat $HOME/my_crontab.conf"
 alias e="exit"
 alias g="goaccess"
 alias lo="locate / | egrep -i" # Linux update db: sudo updatedb
