@@ -9,7 +9,7 @@ set -o vi                    # edit command-line with VI
 # any OS aliases
 alias c="clear"
 alias h="history | grep -E"
-alias is="cd $HOME/.is-ma"
+alias is="cd $HOME/.is-ma && ls"
 alias ismapull='back=$(pwd); cd ~/.is-ma/ && for repo in */; do echo -e "\n--- $repo ---"; cd $repo; git for-each-ref --format="%(push:track)" refs/heads; git pull; cd ..; done; cd $back'
 alias ll="ls -AlFh"
 alias ls="ls -F"
