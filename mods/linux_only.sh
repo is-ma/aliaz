@@ -1,3 +1,6 @@
+# Linux configs
+bind 'set enable-bracketed-paste off'
+
 # Bash only aliases
 alias alib='cat ~/.is-ma/aliaz/mods/linux_only.sh && cat ~/.is-ma/aliaz/mods/any_os.sh'
 alias be="vi ~/.bashrc"
