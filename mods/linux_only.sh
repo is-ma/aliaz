@@ -10,7 +10,7 @@ alias ci='crontab $HOME/my_crontab.conf && crontab -l'
 alias cl="crontab -l > $HOME/my_crontab.conf && cat $HOME/my_crontab.conf"
 alias e="exit"
 alias g="goaccess"
-alias lo="locate / | egrep -i" # Linux update db: sudo updatedb
+alias loc="locate / | egrep -i" # Linux update db: sudo updatedb
 alias mailrm="rm /var/mail/deploy"
 alias mailvi="vi /var/mail/deploy"
 replace () { find . \( -type d -name .git -prune \) -o -type f -print0 | xargs -0 sed -i "s@$1@$2@g"; }
