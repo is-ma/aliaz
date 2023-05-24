@@ -10,7 +10,7 @@ set -o vi                    # edit command-line with VI
 alias c="clear"
 alias h="history | grep -E"
 alias is="cd $HOME/.is-ma && ls"
-alias ismapull='back=$(pwd); cd ~/.is-ma/ && for repo in */; do cd $repo; echo -e "\n--- $repo ---"; git for-each-ref --format="%(push:track)" refs/heads; git pull; gs; cd ..; done; cd $back'
+alias ismapull='back=$(pwd); cd ~/.is-ma/ && for repo in */; do cd $repo; echo -n "----- ----- ----- ----- $repo"; git for-each-ref --format="%(push:track)" refs/heads; git pull; gs; cd ..; done; cd $back'
 alias ll="ls -AlFh"
 alias ls="ls -F"
 wo () { whois $1 | egrep "^   (Admin|Creation|Updated)"; }
