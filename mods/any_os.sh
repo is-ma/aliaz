@@ -14,4 +14,4 @@ alias ismapull='back=$(pwd); cd ~/.is-ma/ && for repo in */; do echo -e "\n--- $
 alias ll="ls -AlFh"
 alias ls="ls -F"
 wo () { whois $1 | egrep "^   (Admin|Creation|Updated)"; }
-
+sumcol(){ awk "{s+=\$$1} END {print s}"; }  # sum numbers in column n
